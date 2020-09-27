@@ -37,6 +37,7 @@ def start_random():
     for i in range(blocks_n_x):  # clear previous data
         for j in range(blocks_n_y):  #
             cells[i][j] = False  #
+            canvas.itemconfig(blocks_of_cells[i][j], fill="white")
 
     try:  # gets number from entry, if it out of limits, set as this limit;
         N_entry = int(entry_rand.get())
